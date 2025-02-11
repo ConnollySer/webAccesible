@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de acceso</title>
+    <link rel="icon" href="img/iconoAcceso.png">
+    <style>
+        @font-face {
+            font-family: sans;
+            src: url(fuentes/GlorienSansSerif-FREE.otf);
+        }
+
+        @font-face {
+            font-family: qu;
+            src: url(fuentes/Serif.otf);
+        }
+
+        label {
+            font-family: qu;
+            color: #333333; 
+        }
+
+        a {
+            font-family: sans;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF; 
+            color: #333333; 
+        }
+
+        header {
+            background-color:#3228B8; 
+            color: #FFFFFF; 
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 30px;
+            font-family: sans;
+            letter-spacing: 2px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #contPrincipal {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: #FFFFFF; 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #contFormulario input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #CCCCCC; 
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        #contFormulario input:focus {
+            border-color:#3228B8; 
+            outline: none;
+        }
+
+        #contBoton a {
+            display: block;
+            width: 90%;
+            padding: 10px;
+            background-color: #3228B8; 
+            color: #FFFFFF; 
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        #btn{
+            display: block;
+            width: 25%;
+            padding:10px;
+            background-color: #3228B8; 
+            color: #FFFFFF; 
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            justify-content: center;
+
+        }
+
+        #contBoton a:hover, #contBoton a:focus {
+            background-color:yellow; 
+            color:black; 
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            #contPrincipal {
+                padding: 15px;
+            }
+
+            #contFormulario input, #contBoton a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 tabindex="1">Accede al contenido aqui</h1>
+    </header>
+    <main>
+        <div id="contPrincipal">
+            <div id="contFormulario">
+                <form method="post">
+                    <label for="nombre">Nombre:
+                        <input tabindex="2" id="nombre" type="text" placeholder="Introduce tu nombre">
+                    </label>
+                    <label for="correo">Correo:
+                        <input tabindex="3" id="correo" type="email" placeholder="Introduce tu correo">
+                    </label>
+
+                </form>
+            </div>
+            <div id="contBoton">
+                <label for="boton">
+                    <a tabindex="4" href="index.html">Accede al contenido</a>
+                </label>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
